@@ -121,13 +121,11 @@ const Product = () => {
 
               <motion.div variants={item} className="pt-4">
                 <a 
-                  href="/contact#visit-us"
+                  href="/contact"
                   onClick={(e) => {
                     e.preventDefault();
                     if (window.location.pathname !== '/contact') {
-                      window.location.href = '/contact#visit-us';
-                    } else {
-                      document.getElementById('visit-us')?.scrollIntoView({ behavior: 'smooth' });
+                      window.location.href = '/contact';
                     }
                   }}
                   className="block"
